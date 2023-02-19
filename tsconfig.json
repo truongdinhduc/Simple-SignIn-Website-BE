@@ -1,0 +1,62 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "esModuleInterop": true,
+        "target": "es6",
+        "noImplicitAny": true,
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "sourceMap": true,
+        "outDir": "dist",
+        "baseUrl": ".",
+        "paths": {
+            "*": [
+                "*"
+            ],
+            "service-nodejs/*": [
+                "service-nodejs/*"
+            ],
+            "lib/*": [
+                "lib/*"
+            ],
+            "assets/*": [
+                "assets/*"
+            ],
+            "core/*": [
+                "core/*"
+            ],
+            "controllers/*": [
+                "api/controllers/*"
+            ],
+            "configs/*": [
+                "api/configs/*"
+            ],
+            "models/*": [
+                "api/models/*"
+            ],
+            "routes/*": [
+                "api/routes/*"
+            ],
+            "services/*": [
+                "api/services/*"
+            ],
+            "utils/*": [
+                "api/utils/*"
+            ],
+        },
+        "lib": [
+            "es5",
+            "es6",
+            "dom",
+            "dom.iterable"
+        ],
+        "declaration": true,
+        "emitDeclarationOnly": true,
+    },
+    "include": [
+        "**/*.ts",
+        "**/*.tsx",
+        "global.d.ts",
+        "api/@types/lib/*.ts"
+    ]
+}

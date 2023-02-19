@@ -1,0 +1,30 @@
+{
+    "presets": [
+        "@babel/preset-env",
+        "@babel/preset-react",
+        "@babel/preset-typescript"
+    ],
+    "ignore": [
+        "node_modules"
+    ],
+    "plugins": [
+        "@babel/plugin-transform-runtime",
+        [
+            "module-resolver",
+            {
+                "root": ["./"],
+                "alias": {
+                    "controllers": "./api/controllers",
+                    "models": "./api/models",
+                    "assets": "./assets",
+                    "service-nodejs": "./service-nodejs",
+                    "core": "./core",
+                    "src": "./src",
+                    "configs": "./api/configs",
+                    "services": "./api/services",
+                    "utils": "./api/utils"
+                }
+            }
+        ]
+    ]
+}
