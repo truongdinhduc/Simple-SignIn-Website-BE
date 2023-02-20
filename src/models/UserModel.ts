@@ -5,6 +5,7 @@ export const UserModel: ModelType = {
     schema: {
         username: String,
         password: String,
-        last_signed_in: Date
+        last_signed_in: Date,
+        email: String
     }
 };
